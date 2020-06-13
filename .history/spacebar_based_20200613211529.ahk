@@ -52,6 +52,12 @@ $Space::
 
 #inputlevel,1
 
+; F24 & Enter::^Enter
+
+
+; space::Send {space}
+
+; space & 1::Send {space}
 
 F24 & u::home
 F24 & d::shift

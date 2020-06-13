@@ -36,3 +36,8 @@ F24 & =::F12
 
 F24 & Enter::^Enter
 
+;Ctrl+S 重加载
+; ~^s::
+; sleep 500
+; Reload
+; return
