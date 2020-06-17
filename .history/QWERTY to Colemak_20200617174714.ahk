@@ -53,15 +53,15 @@ $3::
         Send {Blind}{3 DownR}
     return
 
-$2::
-    SetMouseDelay -1
-    Send {Blind}{F23 DownR}
-    KeyWait, 2
-    Send {Blind}{F23 up}
-    ; MsgBox, %A_ThisHotkey%-%A_TimeSinceThisHotkey%
-    if(A_ThisHotkey="$2" and A_TimeSinceThisHotkey<200)
-        Send {Blind}{2 DownR}
-    return
+; $2::
+;     SetMouseDelay -1
+;     Send {Blind}{F23 DownR}
+;     KeyWait, 2
+;     Send {Blind}{F23 up}
+;     ; MsgBox, %A_ThisHotkey%-%A_TimeSinceThisHotkey%
+;     if(A_ThisHotkey="$2" and A_TimeSinceThisHotkey<200)
+;         Send {Blind}{2 DownR}
+;     return
 
 #inputlevel,1
 F24 & n:: 1
@@ -93,4 +93,3 @@ F23 & Space::_
 F23 & p::Send `%
 F23 & `;::&
 F23 & /::#
-

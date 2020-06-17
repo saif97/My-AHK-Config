@@ -52,7 +52,6 @@ $3::
     if(A_ThisHotkey="$3" and A_TimeSinceThisHotkey<200)
         Send {Blind}{3 DownR}
     return
-
 $2::
     SetMouseDelay -1
     Send {Blind}{F23 DownR}
@@ -75,22 +74,19 @@ F24 & i:: 8
 F24 & o:: 9
 F24 & Space:: 0
 F24 & p:: +
-F24 & `;:: -
+F24 & ;:: -
 F24 & /:: =
-F24 & h:: *
 
-
-F23 & n::)
-F23 & m::]
-F23 & ,::}
-F23 & j::(
-F23 & k::[
-F23 & l::{
-F23 & u::!
-F23 & i::@
-F23 & o::$
-F23 & Space::_
-F23 & p::Send `%
-F23 & `;::&
-F23 & /::#
-
+F24 & n:: 1
+F24 & m:: 2
+F24 & ,:: 3
+F24 & j:: 4
+F24 & k:: 5
+F24 & l:: 6
+F24 & u:: 7
+F24 & i:: 8
+F24 & o:: 9
+F24 & Space:: 0
+F24 & p:: +
+F24 & ;:: -
+F24 & /:: =
