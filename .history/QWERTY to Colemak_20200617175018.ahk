@@ -21,6 +21,7 @@ SetTitleMatchMode RegEx
 
 RAlt & 1:: Suspend
 
+
 e::f
 r::p
 t::g
