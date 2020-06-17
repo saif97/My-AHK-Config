@@ -18,29 +18,9 @@ SendMode Input ; Recommended for new scripts due to its superior speed and relia
 SetCapsLockState, alwaysoff
 SetTitleMatchMode RegEx
 
-; 192k12
+; capsLock & RWin:: Suspend, ninokkkkkkkkkkmbbbbbbbbbbbbbbbbbbbbbbvbstttttttfbbkkkkmmmnnnnnnnnnnnnnnnnffnnnttt1ttttt1nnin'
 
 RAlt & 1:: Suspend
-
-
-e::f
-r::p
-t::g
-y::j
-u::l
-i::u
-o::y
-p::`;
-s::r
-d::s
-f::t
-g::d
-j::n
-k::e
-l::i
-n::k
-`;::o
-
 
 #inputlevel,2
 $3::
@@ -54,9 +34,9 @@ $3::
     return
 
 #inputlevel,1
-F24 & n:: 1
-F24 & m:: 2
-F24 & ,:: 3
+F24 & m:: 1
+F24 & ,:: 2
+F24 & .:: 3
 F24 & j:: 4
 F24 & k:: 5
 F24 & l:: 6
@@ -68,3 +48,31 @@ F24 & h:: =
 F24 & y:: +
 F24 & b:: -
 
+; nei,m.nulyneim,.neiluyntneoi m,.neiluy
+If ( GetKeyboardLayout("A") = 1252) ; 4105 = 0x1009 https://msdn.microsoft.com/en-us/library/aa912040
+{
+    e::f
+    r::p
+    t::g
+    y::j
+    u::l
+    i::u
+    o::y
+    p::`;
+    s::r
+    d::s
+    f::t
+    g::d
+    j::n
+    k::e
+    l::i
+    n::k
+    `;::o
+}
+
+GetKeyboardLayout(ByRef window)
+{
+    return DllCall("GetKeyboardLayout", "UInt", DllCall("GetWindowThreadProcessId", "Int", WinExist(window), "Int", 0), "UShort")
+}
+; o
+;;;;

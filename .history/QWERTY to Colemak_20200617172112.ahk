@@ -18,7 +18,7 @@ SendMode Input ; Recommended for new scripts due to its superior speed and relia
 SetCapsLockState, alwaysoff
 SetTitleMatchMode RegEx
 
-; 192k12
+; 
 
 RAlt & 1:: Suspend
 
@@ -41,7 +41,7 @@ l::i
 n::k
 `;::o
 
-
+;  with 3 pressed
 #inputlevel,2
 $3::
     SetMouseDelay -1
@@ -54,9 +54,9 @@ $3::
     return
 
 #inputlevel,1
-F24 & n:: 1
-F24 & m:: 2
-F24 & ,:: 3
+F24 & m:: 1
+F24 & ,:: 2
+F24 & .:: 3
 F24 & j:: 4
 F24 & k:: 5
 F24 & l:: 6
@@ -67,4 +67,3 @@ F24 & Space:: 0
 F24 & h:: =
 F24 & y:: +
 F24 & b:: -
-

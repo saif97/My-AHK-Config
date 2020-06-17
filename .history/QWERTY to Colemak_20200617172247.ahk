@@ -41,7 +41,7 @@ l::i
 n::k
 `;::o
 
-
+;  with 3 pressed192.168.28855sl
 #inputlevel,2
 $3::
     SetMouseDelay -1
@@ -67,4 +67,3 @@ F24 & Space:: 0
 F24 & h:: =
 F24 & y:: +
 F24 & b:: -
-

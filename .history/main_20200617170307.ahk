@@ -22,8 +22,33 @@ RAlt & 2:: Run, spacebar_based.ahk
 RAlt & 3:: Run, capslock_based.ahk
 
 
+#inputlevel,2
+$3::
+    SetMouseDelay -1
+    Send {Blind}{F24 DownR}
+    KeyWait, 3
+    Send {Blind}{F24 up}
+    ; MsgBox, %A_ThisHotkey%-%A_TimeSinceThisHotkey%
+    if(A_ThisHotkey="$3" and A_TimeSinceThisHotkey<200)
+        Send {Blind}{3 DownR}
+    return
 
-; #If Getkeystate("3","p") ;if shift is held the following hotkey is active.thiont3un21u123neiluyj123nnyooooyyyooo579877456221354789123456789
+#inputlevel,1
+3 & m:: 1
+3 & ,:: 2
+3 & .:: 3
+3 & j:: 4
+3 & k:: 5
+3 & l:: 6
+3 & u:: 7
+3 & i:: 8
+3 & o:: 9
+3 & Space:: 0
+3 & h:: =
+3 & y:: +
+3 & b:: -
+
+; #If Getkeystate("3","p") ;if shift is held the following hotkey is active.
 
 ;     3 & m:: 1
 ;     3 & ,:: 2

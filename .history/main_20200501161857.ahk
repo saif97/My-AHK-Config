@@ -21,9 +21,7 @@ Run, QWERTY to Colemak.ahk
 RAlt & 2:: Run, spacebar_based.ahk
 RAlt & 3:: Run, capslock_based.ahk
 
-
-
-; #If Getkeystate("3","p") ;if shift is held the following hotkey is active.thiont3un21u123neiluyj123nnyooooyyyooo579877456221354789123456789
+; #If Getkeystate("3","p") ;if shift is held the following hotkey is active.
 
 ;     3 & m:: 1
 ;     3 & ,:: 2

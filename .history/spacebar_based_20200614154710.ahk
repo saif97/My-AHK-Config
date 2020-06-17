@@ -21,6 +21,10 @@ RAlt & 3:: ExitApp,
 
 Alt & Esc::Send !{F4}
 
+
+
+
+
 RShift::
 now := A_TickCount
 while GetKeyState("RShift", "P")
