@@ -48,7 +48,7 @@ $3::
     Send {Blind}{F24 up}
     ; MsgBox, %A_ThisHotkey%-%A_TimeSinceThisHotkey%
     if(A_ThisHotkey="$3" and A_TimeSinceThisHotkey<200)
-        Send {Blind}{3 DownR}
+        ; Send {Blind}{3 DownR}
     return
 
 $2::
@@ -58,7 +58,7 @@ $2::
     Send {Blind}{F23 up}
     ; MsgBox, %A_ThisHotkey%-%A_TimeSinceThisHotkey%
     if(A_ThisHotkey="$2" and A_TimeSinceThisHotkey<200)
-        Send {Blind}{2 DownR}
+        ; Send {Blind}{2 DownR}
     return
 
 #inputlevel,1
@@ -92,3 +92,14 @@ F23 & p::Send `%
 F23 & `;::&
 F23 & /::#
 
+; To force my self to learn the new way of typing numbers & symboyls I'll disable number row entiely
+1::
+; 2::
+; 3::
+4::
+5::
+6::
+7::
+8::
+9::
+0::
