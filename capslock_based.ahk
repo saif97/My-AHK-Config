@@ -41,7 +41,7 @@ Alt & Esc::Send !{F4}
 ; return
 
 
-Tab::F15
+; Tab::F15
 
 
 Tab & u::home
@@ -102,7 +102,6 @@ return
 
 #IfWinActive, Chrome
 {
-
     Tab & 1::MButton
 
     ; My mouses scrolling is abnormal so I've made ctrl + R mouse and drag scrollening :)

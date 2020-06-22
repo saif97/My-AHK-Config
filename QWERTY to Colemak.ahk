@@ -64,16 +64,28 @@ $2::
         ; Send {Blind}{2 DownR}
     return
 
-$RShift::
+CapsLock::
     SetMouseDelay -1
-    Send {Blind}{Ctrl DownR} {Alt DownR}
-    KeyWait, RShift
-    Send {Blind}{Ctrl up} {Alt up}
+    Send {Blind}{Ctrl DownR}
+    KeyWait, CapsLock
+    Send {Blind}{Ctrl up}
     ; MsgBox, %A_ThisHotkey%-%A_TimeSinceThisHotkey%
-    if(A_ThisHotkey="$RShift" and A_TimeSinceThisHotkey<200)
-        Send {Blind}{F11 DownR}
+    if(A_ThisHotkey="CapsLock" and A_TimeSinceThisHotkey<200)
+        Send {Blind}{F15 DownR}
     return
 
+
+; $RShift::
+;     SetMouseDelay -1
+;     Send {Blind}{Ctrl DownR} {Alt DownR}
+;     KeyWait, RShift
+;     Send {Blind}{Ctrl up} {Alt up}
+;     ; MsgBox, %A_ThisHotkey%-%A_TimeSinceThisHotkey%
+;     if(A_ThisHotkey="$RShift" and A_TimeSinceThisHotkey<200)
+;         Send {Blind}{F11 DownR}
+;     return
+
+RShift::F11
 
 #inputlevel,1
 F24 & n:: 1
@@ -116,3 +128,5 @@ F23 & /::#
 7::
 8::
 9::
+
+$Ctrl::return
