@@ -13,7 +13,7 @@
 #NoEnv ; Recommended for performance and compatibility with future AutoHotkey releases.
 SendMode Input ; Recommended for new scripts due to its superior speed and reliability.
 ; SetTitleMatchMode 3  ; Exact matching to avoid confusing T/B with Tab/Backspann nn nnnnnnnnce.nnn
-SetCapsLockState, alwaysoff
+; SetCapsLockState, alwaysoff
 SetTitleMatchMode RegEx
 
 RAlt & 2:: ExitApp,

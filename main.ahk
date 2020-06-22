@@ -22,21 +22,13 @@ RAlt & 2:: Run, spacebar_based.ahk
 RAlt & 3:: Run, capslock_based.ahk
 
 
+CapsLock::
+    SetMouseDelay -1
+    Send {Blind}{Ctrl DownR}
+    KeyWait, CapsLock
+    Send {Blind}{Ctrl up}
+    ; MsgBox, %A_ThisHotkey%-%A_TimeSinceThisHotkey%
+    if(A_ThisHotkey="CapsLock" and A_TimeSinceThisHotkey<200)
+        Send {Blind}{F15 DownR}
+    return
 
-; #If Getkeystate("3","p") ;if shift is held the following hotkey is active.thiont3un21u123neiluyj123nnyooooyyyooo579877456221354789123456789
-
-;     3 & m:: 1
-;     3 & ,:: 2
-;     3 & .:: 3
-;     3 & j:: 4
-;     3 & k:: 5
-;     3 & l:: 6
-;     3 & u:: 7
-;     3 & i:: 8
-;     3 & o:: 9
-;     3 & Space:: 0
-;     3 & h:: =
-;     3 & y:: +
-;     3 & b:: -
-
-; return

@@ -15,7 +15,7 @@
 #NoEnv ; Recommended for performance and compatibility with future AutoHotkey releases.
 SendMode Input ; Recommended for new scripts due to its superior speed and reliability.
 ; SetTitleMatchMode 3  ; Exact matching to avoid confusing T/B with Tab/Backspace .nknknk
-SetCapsLockState, alwaysoff
+; SetCapsLockState, alwaysoff
 SetTitleMatchMode RegEx
 
 
@@ -62,16 +62,6 @@ $2::
     ; MsgBox, %A_ThisHotkey%-%A_TimeSinceThisHotkey%
     if(A_ThisHotkey="$2" and A_TimeSinceThisHotkey<200)
         ; Send {Blind}{2 DownR}
-    return
-
-CapsLock::
-    SetMouseDelay -1
-    Send {Blind}{Ctrl DownR}
-    KeyWait, CapsLock
-    Send {Blind}{Ctrl up}
-    ; MsgBox, %A_ThisHotkey%-%A_TimeSinceThisHotkey%
-    if(A_ThisHotkey="CapsLock" and A_TimeSinceThisHotkey<200)
-        Send {Blind}{F15 DownR}
     return
 
 
@@ -129,4 +119,4 @@ F23 & /::#
 8::
 9::
 
-$Ctrl::return
+; $Ctrl::#
