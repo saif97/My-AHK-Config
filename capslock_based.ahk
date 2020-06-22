@@ -27,55 +27,55 @@ Alt & Esc::Send !{F4}
 ;     returnzz
 
 
-RShift::
-now := A_TickCount
-while GetKeyState("RShift", "P")
-	if (A_TickCount-now > 300)
-	{
-		Send {ShiftDown}
-		KeyWait, RShift
-		Send {ShiftUp}
-		return
-	}
-Send {F1}
-return
+; RShift::
+; now := A_TickCount
+; while GetKeyState("RShift", "P")
+; 	if (A_TickCount-now > 300)
+; 	{
+; 		Send {ShiftDown}
+; 		KeyWait, RShift
+; 		Send {ShiftUp}
+; 		return
+; 	}
+; Send {F1}
+; return
 
 
-capsLock::F15
+Tab::F15
 
 
-capsLock & u::home
-capsLock & d::shift
-capsLock & f::ctrl
-capsLock & o::end
-capsLock & s:: Alt
-capsLock & j:: left
-capsLock & k:: down
-capsLock & l:: right
-capsLock & i:: up
-capsLock & n::backSpace
-capsLock & h::Del
-capsLock & z::^z
-capsLock & x::^x
-capsLock & c::^c
-capsLock & v::^v
+Tab & u::home
+Tab & q::shift
+Tab & w::ctrl
+Tab & o::end
+Tab & s:: Alt
+Tab & j:: left
+Tab & k:: down
+Tab & l:: right
+Tab & i:: up
+Tab & n::backSpace
+Tab & h::Del
+Tab & z::^z
+Tab & x::^x
+Tab & c::^c
+Tab & v::^v
 
-capsLock & `;:: F13
-capsLock & p:: ^F13
-capsLock & t:: ^!F13
+Tab & `;:: F13
+Tab & p:: ^F13
+Tab & t:: ^!F13
 
-capsLock & Enter:: ^!+F13
+Tab & Enter:: ^!+F13
 
 
-#if GetKeyState("capsLock", "P")
+#if GetKeyState("Tab", "P")
 
     ; Indent and un-indent
     r::tab
     e::+tab
 
-        ; Switch between workshops:
-    w:: #^right
-    q:: #^left
+    ; Switch between workshops:
+    ]:: #^right
+    [:: #^left
 
     ; Switch between tabs.
     .:: Send {ctrl down}`t{ctrl up}
@@ -100,45 +100,10 @@ capsLock & Enter:: ^!+F13
 
 return
 
-Tab & n:: 1
-
-#If Getkeystate("tab","p") ;if shift is held the following hotkey is active.
-
-
-    ; f & n:: 1
-    ; f & m:: 2
-    ; f & ,:: 3
-    ; f & j:: 4
-    ; f & k:: 5
-    ; f & l:: 6
-    ; f & u:: 7
-    ; f & i:: 8
-    ; f & o:: 9
-    ; f & Space:: 0
-    ; f & h:: =
-    ; f & y:: +
-    ; f & b:: -
-
-    ; d & `;:: `;
-    ; d & '::'
-    ; d & l::]
-    ; d & k::[
-    ; d & i::(
-    ; d & o::)
-
-    ; s & `;:: +`;
-    ; s & ':: +'
-    ; s & l::}
-    ; s & k::{
-
-
-return
-; tttttttttttttt4812t12t12121248t4
-
 #IfWinActive, Chrome
 {
 
-    capsLock & 1::MButton
+    Tab & 1::MButton
 
     ; My mouses scrolling is abnormal so I've made ctrl + R mouse and drag scrollening :)
     capsLock & 9::send {Home} {shift down}{left}{left}{shift up}

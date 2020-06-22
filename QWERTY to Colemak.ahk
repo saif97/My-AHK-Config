@@ -19,6 +19,7 @@ SetCapsLockState, alwaysoff
 SetTitleMatchMode RegEx
 
 
+
 RAlt & 1:: Suspend
 
 e::f
@@ -38,6 +39,8 @@ k::e
 l::i
 n::k
 `;::o
+
+; Tab::F14
 
 
 #inputlevel,2
@@ -60,6 +63,17 @@ $2::
     if(A_ThisHotkey="$2" and A_TimeSinceThisHotkey<200)
         ; Send {Blind}{2 DownR}
     return
+
+$RShift::
+    SetMouseDelay -1
+    Send {Blind}{Ctrl DownR} {Alt DownR}
+    KeyWait, RShift
+    Send {Blind}{Ctrl up} {Alt up}
+    ; MsgBox, %A_ThisHotkey%-%A_TimeSinceThisHotkey%
+    if(A_ThisHotkey="$RShift" and A_TimeSinceThisHotkey<200)
+        Send {Blind}{F11 DownR}
+    return
+
 
 #inputlevel,1
 F24 & n:: 1
@@ -102,4 +116,3 @@ F23 & /::#
 7::
 8::
 9::
-0::
