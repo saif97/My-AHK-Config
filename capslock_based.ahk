@@ -41,7 +41,8 @@ Alt & Esc::Send !{F4}
 ; return
 
 
-; Tab::F15
+Tab::tab
+
 
 
 Tab & u::home
