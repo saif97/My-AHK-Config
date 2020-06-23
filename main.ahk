@@ -21,6 +21,7 @@ Run, QWERTY to Colemak.ahk
 RAlt & 2:: Run, spacebar_based.ahk
 RAlt & 3:: Run, capslock_based.ahk
 
+RShift::F11
 
 CapsLock::
     SetMouseDelay -1
