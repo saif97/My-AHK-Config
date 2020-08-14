@@ -9,6 +9,8 @@
 ; TODO: enable the ~ key.
 ; TODO: one keyshot to switch windows left or right.nnnnnnnn nnnkkkkkkkkkkkkkk  kkkkkk
 
+
+; RAlt & \::ExitApp,
 #SingleInstance force
 #NoEnv ; Recommended for performance and compatibility with future AutoHotkey releases.
 SendMode Input ; Recommended for new scripts due to its superior speed and reliability.
@@ -17,9 +19,12 @@ SetCapsLockState, alwaysoff
 SetTitleMatchMode RegEx
 
 Run, QWERTY to Colemak.ahk
+Run, capslock_based.ahk
 
-RAlt & 2:: Run, spacebar_based.ahk
-RAlt & 3:: Run, capslock_based.ahk
+; Run, altFN.ahk
+
+; RAlt & 2:: Run, spacebar_based.ahk
+; RAlt & 3:: Run, capslock_based.ahk
 
 RShift::F11
 
@@ -33,3 +38,5 @@ CapsLock::
         Send {Blind}{F15 DownR}
     return
 
+; Tab::Alt
+; Ctrl::Tab

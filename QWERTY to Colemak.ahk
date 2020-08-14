@@ -10,14 +10,14 @@
 
 ; TODO: enable the ~ key.
 ; TODO: one keyshot to switch windows left or right.
-
+RAlt & 0::ExitApp,
 #SingleInstance force
 #NoEnv ; Recommended for performance and compatibility with future AutoHotkey releases.
 SendMode Input ; Recommended for new scripts due to its superior speed and reliability.
 ; SetTitleMatchMode 3  ; Exact matching to avoid confusing T/B with Tab/Backspace .nknknk
 ; SetCapsLockState, alwaysoff
 SetTitleMatchMode RegEx
-
+RAlt & 9::Suspend
 
 
 RAlt & 1:: Suspend
@@ -103,4 +103,4 @@ F23 & /::#
 8::
 9::
 
-; $Ctrl::#
+; ; $Ctrl::#

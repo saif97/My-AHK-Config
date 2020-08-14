@@ -45,15 +45,15 @@ Tab::tab
 
 
 
-Tab & u::home
 Tab & q::shift
-Tab & w::ctrl
-Tab & o::end
-Tab & s:: Alt
 Tab & j:: left
 Tab & k:: down
 Tab & l:: right
 Tab & i:: up
+Tab & u::home
+Tab & w::ctrl
+Tab & o::end
+Tab & s:: Alt
 Tab & n::backSpace
 Tab & h::Del
 Tab & z::^z
@@ -70,7 +70,7 @@ Tab & Enter:: ^!+F13
 
 #if GetKeyState("Tab", "P")
 
-    ; Indent and un-indent
+    ; Indent and ufpfpn-indent
     r::tab
     e::+tab
 
